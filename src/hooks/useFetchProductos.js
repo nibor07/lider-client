@@ -4,7 +4,6 @@ import { getProductos } from '../helpers/getProductos';
 
 export const useFetchProductos = ( producto ) => {
     
-    console.log('Productos XXXX: ', producto);
     const [state, setState] = useState({
         data: [],
         loading: true
