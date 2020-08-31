@@ -11,6 +11,7 @@ export const getProductos = async( producto ) => {
         const respuesta = await clienteAxios.post('/api/buscar', data);
         console.log("respuesta: ", respuesta.data.productos);
         console.log("respuesta: ", respuesta.data.codigo);
+        console.log("respuesta: ", respuesta.data.isPalindromo);
         
         if(respuesta && respuesta.data.codigo === "00"){
             productos = respuesta.data.productos.map( producto => {
@@ -19,7 +20,9 @@ export const getProductos = async( producto ) => {
                     brand: producto.brand,
                     description: producto.description,
                     url: producto.image?producto.image:'',
-                    price:producto.price
+                    isDescuento: respuesta.data.isPalindromo,
+                    precioConDescuento: Math.round(producto.price),
+                    price: respuesta.data.isPalindromo ? producto.price * 2 : producto.price
                 }
             })
         

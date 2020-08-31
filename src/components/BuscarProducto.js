@@ -26,7 +26,7 @@ export const BuscarProducto = ( { setProductos } ) => {
     const handleSubmit = (e) =>{
         e.preventDefault();
 
-        if( inputValue.trim().length > 2 ){
+        if( inputValue.trim().length > 0 ){
             setProductos(  prods => [ inputValue ]);
             setInputValue('');
         }
