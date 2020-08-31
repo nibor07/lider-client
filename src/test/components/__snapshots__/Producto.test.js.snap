@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests de <Producto /> debe de mostrar el componente correctamente 1`] = `
+<div
+  className="col-md-4 mb-5"
+>
+  <div
+    className="card"
+  >
+    <img
+      alt="https://wwww.test.cl/1.jpg"
+      className="card-img-top"
+      src="https://wwww.test.cl/1.jpg"
+    />
+    <h1
+      className="card-header"
+    >
+      Televisor DAEWOO
+       
+      <span
+        className="description"
+      >
+         
+      </span>
+    </h1>
+    <p>
+       
+      123
+       
+    </p>
+    <div
+      className="card-body"
+    >
+      <button
+        className="btn btn-block btn-light"
+        onClick={[Function]}
+        type="button"
+      >
+        Agregar
+      </button>
+    </div>
+  </div>
+</div>
+`;

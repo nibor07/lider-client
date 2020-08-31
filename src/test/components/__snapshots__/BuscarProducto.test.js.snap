@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <BuscarProducto /> debe de mostrarse correctamente 1`] = `
+<Styled(div)
+  className="col-xs-8"
+>
+  <div
+    className="logo"
+  >
+    <a
+      href="/catalogo/"
+    >
+      <Styled(img)
+        alt="Lider Logo"
+        src="https://www.lider.cl/catalogo/images/lider-logo.svg"
+      />
+    </a>
+  </div>
+  <div>
+    <form
+      className="col-12"
+      onSubmit={[Function]}
+    >
+      <div
+        className="row mt-4"
+      >
+        <div
+          className="col-md-4"
+        >
+          <input
+            className="form-control"
+            name="search"
+            onChange={[Function]}
+            placeholder="Buscar por Producto"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </form>
+  </div>
+</Styled(div)>
+`;
